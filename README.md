@@ -11,6 +11,38 @@
 
 ## Implementation Priority: #7 / 13
 
+## Deployment Verification (2026-11-23)
+
+This repository currently contains implementation and QA documentation, not the
+Base44 application source. It therefore cannot provide direct evidence for the
+public homepage, dashboard data, protected routes, or suite navigation.
+
+| Verification target | Repository evidence | Deployment evidence |
+| --- | --- | --- |
+| Public homepage | No homepage component or Base44 export is checked in | Not verified |
+| Dashboard data | No data model or entity query code is checked in | Not verified |
+| Protected routes | Route list is documented below | Not verified |
+| Suite navigation | No `suiteConfig.js` or navigation components are checked in | Not verified |
+| Payment functions | Endpoint URLs are documented below | Not independently verified |
+| SEO and mobile QA | No public route or application source is checked in | Not verified |
+
+The live hostname `https://aicostauditor.base44.app` did not resolve in this
+verification environment on 2026-11-23 (tested with `curl -sS -I
+https://aicostauditor.base44.app` and `getent ahosts
+aicostauditor.base44.app`). The result is therefore inconclusive from this
+client. No screenshot, HTTP response, or route behavior is recorded as passing.
+Before the deployment issue is closed, attach fresh evidence for:
+
+- HTTP 200 from the public `/` route with rendered marketing content
+- The logged-out behavior of each protected route
+- Dashboard panels reading real, scoped cost records rather than sample data
+- Suite navigation URLs and AI Cost Auditor self-exclusion
+- Checkout, billing portal, usage gate, export gate, and audit logger responses
+- Mobile overflow and the route-specific SEO metadata
+
+This section is the canonical verification record. Do not mark the deployment
+complete based only on the QA checkboxes below.
+
 ## Enforcement Gate Checklist
 
 | Gate | Status |
@@ -43,7 +75,7 @@
 
 ---
 
-## Backend Functions (all live)
+## Backend Function Endpoints (not independently verified)
 
 | Function | Endpoint |
 |----------|----------|
