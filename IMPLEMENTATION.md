@@ -48,3 +48,8 @@ Billing Portal: POST https://superagent-b2d614b7.base44.app/functions/createBill
 ## Step 5: QA Pass
 Run all 23 QA checks from the master checklist before marking as Improved.
 Master checklist: .agents/memory/remediation-qa-checklist.csv
+
+Record public-route, dashboard-data, route-protection, suite-navigation, and
+mobile results in the `Deployment Verification` table in `README.md`. A
+checkbox is not verification evidence; attach the observed URL, response, or
+screenshot.

@@ -11,6 +11,34 @@
 
 ## Implementation Priority: #7 / 13
 
+## Deployment Verification (2026-11-23)
+
+This repository currently contains implementation and QA documentation, not the
+Base44 application source. It therefore cannot provide direct evidence for the
+public homepage, dashboard data, protected routes, or suite navigation.
+
+| Verification target | Repository evidence | Deployment evidence |
+| --- | --- | --- |
+| Public homepage | No homepage component or Base44 export is checked in | Not verified |
+| Dashboard data | No data model or entity query code is checked in | Not verified |
+| Protected routes | Route list is documented below | Not verified |
+| Suite navigation | No `suiteConfig.js` or navigation components are checked in | Not verified |
+| Payment functions | Endpoint URLs are documented below | Not independently verified |
+
+The live Base44 hostname did not resolve from this verification environment,
+and the result is therefore inconclusive from this client. No screenshot, HTTP
+response, or route behavior is recorded as passing. Before the deployment issue
+is closed, attach fresh evidence for:
+
+- HTTP 200 from the public `/` route with rendered marketing content
+- The logged-out behavior of each protected route
+- Dashboard panels reading real, scoped cost records rather than sample data
+- Suite navigation URLs and AI Cost Auditor self-exclusion
+- Mobile overflow and the route-specific SEO metadata
+
+This section is the canonical verification record. Do not mark the deployment
+complete based only on the QA checkboxes below.
+
 ## Enforcement Gate Checklist
 
 | Gate | Status |
